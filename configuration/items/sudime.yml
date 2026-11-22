@@ -540,7 +540,7 @@ items:
       generation:
         parent: minecraft:item/generated
         textures:
-          layer0: minecraft:item/sudime/sudime_ingot
+          layer0: minecraft:item/sudime/drawer_upgrade
   # ── Lune ─────────────────────────────────────────────────────────────
   sudime:pyrite_raw:
     material: raw_iron
@@ -706,14 +706,15 @@ items:
         textures:
           layer0: minecraft:item/sudime/moon_boots
 
-  sudime:moon_portal_frame:
+  sudime:moon_portal:
     data:
-      item_name: "<!i><gradient:#78e6ff:#2c8fb5>Cadre de portail lunaire</gradient>"
+      item_name: "<!i><gradient:#78e6ff:#2c8fb5>Portail lunaire</gradient>"
       lore:
-        - "<!i><gray>Monte un cadre avec 8 blocs, puis"
-        - "<!i><gray>clic droit en <white>Armure Lunaire</white> complète."
-        - "<!i><gray>Le portail s'ouvre et mène sur la Lune."
-    model: minecraft:block/custom/moon_portal_frame
+        - "<!i><gray>Pose-le où tu veux, puis <white>clic droit</white>"
+        - "<!i><gray>dessus avec l'<white>Armure Lunaire</white> complète."
+        - "<!i><gray>Tu es téléporté sur la Lune."
+        - "<!i><gray>Sur la Lune, clic droit sur un portail = retour."
+    model: minecraft:block/custom/moon_portal
     behavior:
       type: block_item
       block:
@@ -723,17 +724,17 @@ items:
           template:
             - default:sound/stone
           overrides:
-            hardness: 25.0
+            hardness: 1.5
             resistance: 1200.0
             tags: ["minecraft:mineable/pickaxe"]
         state:
           auto_state: solid
           model:
-            path: minecraft:block/custom/moon_portal_frame
+            path: minecraft:block/custom/moon_portal
             generation:
               parent: minecraft:block/cube_all
               textures:
-                all: minecraft:block/custom/moon_portal_frame
+                all: minecraft:block/custom/moon_portal
 
 blocks:
   sudime:sudime_ore:
@@ -832,15 +833,6 @@ blocks:
     state:
       auto_state: solid
       texture: minecraft:block/custom/pyrite_ore
-  sudime:moon_portal:
-    settings:
-      hardness: 0.1
-      resistance: 1200.0
-    loot:
-      pools: []
-    state:
-      auto_state: solid
-      texture: minecraft:block/custom/moon_portal
 
 equipments:
   $$>=1.21.2:

@@ -26,3 +26,17 @@ categories:
       - sudime:turbo_farmland
       - sudime:sudime_drawer
       - sudime:drawer_upgrade
+  sudime:pyrite:
+    priority: 6
+    name: "<!i><gradient:#ffd166:#b8860b>Pyrite & Lune</gradient>"
+    lore:
+      - "<!i><gray>Pyrite brute et lingots, armure lunaire et portail"
+    icon: sudime:pyrite_ingot
+    list:
+      - sudime:pyrite_raw
+      - sudime:pyrite_ingot
+      - sudime:moon_helmet
+      - sudime:moon_chestplate
+      - sudime:moon_leggings
+      - sudime:moon_boots
+      - sudime:moon_portal
