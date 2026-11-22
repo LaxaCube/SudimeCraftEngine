@@ -1,0 +1,17 @@
+# La gemme topaz du pack par défaut n'est pas enregistrée comme item sur ce
+# serveur (sa section "items" vit dans un fichier de blocs). On déclare donc
+# notre propre item sudime:topaz, même texture, pour que les recettes marchent.
+items:
+  sudime:topaz:
+    material: emerald
+    data:
+      item_name: "<!i><#FF8C00>Topaz"
+      lore:
+        - "<!i><gray>Gemme utilisée dans l'artisanat avancé."
+    model:
+      type: minecraft:model
+      path: sudime:item/topaz
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/custom/topaz

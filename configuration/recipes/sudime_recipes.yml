@@ -316,7 +316,7 @@ recipes:
       - "ITI"
     ingredients:
       I: minecraft:iron_ingot
-      T: default:topaz
+      T: sudime:topaz
     result:
       id: sudime:moon_helmet
       count: 1
@@ -331,7 +331,7 @@ recipes:
       - "III"
     ingredients:
       I: minecraft:iron_ingot
-      T: default:topaz
+      T: sudime:topaz
     result:
       id: sudime:moon_chestplate
       count: 1
@@ -346,7 +346,7 @@ recipes:
       - "I I"
     ingredients:
       I: minecraft:iron_ingot
-      T: default:topaz
+      T: sudime:topaz
     result:
       id: sudime:moon_leggings
       count: 1
@@ -360,7 +360,7 @@ recipes:
       - "ITI"
     ingredients:
       I: minecraft:iron_ingot
-      T: default:topaz
+      T: sudime:topaz
     result:
       id: sudime:moon_boots
       count: 1

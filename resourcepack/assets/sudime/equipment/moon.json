@@ -1,10 +1,10 @@
 {
   "layers": {
     "humanoid": [
-      { "texture": "sudime:textures/trims/entity/humanoid/moon_custom" }
+      { "texture": "moon" }
     ],
     "humanoid_leggings": [
-      { "texture": "sudime:textures/trims/entity/humanoid_leggings/moon_custom" }
+      { "texture": "moon" }
     ]
   }
 }
