@@ -305,21 +305,7 @@ recipes:
     result:
       id: sudime:pyrite_ingot
       count: 1
-  sudime:moon_portal:
-    type: shaped
-    category: misc
-    group: sudime
-    unlock_on_join: true
-    pattern:
-      - "OOO"
-      - "OEO"
-      - "OOO"
-    ingredients:
-      O: minecraft:obsidian
-      E: sudime:pyrite_ingot
-    result:
-      id: sudime:moon_portal
-      count: 1
+  # Portail lunaire désactivé : la Lune n'est pas encore ouverte.
   sudime:moon_helmet:
     type: shaped
     category: equipment
