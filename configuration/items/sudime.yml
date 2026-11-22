@@ -541,6 +541,200 @@ items:
         parent: minecraft:item/generated
         textures:
           layer0: minecraft:item/sudime/sudime_ingot
+  # ── Lune ─────────────────────────────────────────────────────────────
+  sudime:pyrite_raw:
+    material: raw_iron
+    data:
+      item_name: "<!i><gradient:#ffd166:#b8860b>Pyrite brute</gradient>"
+      lore:
+        - "<!i><gray>Minerai abondant de la Lune."
+        - "<!i><gray>À fondre pour obtenir un <white>Lingot de Pyrite</white>."
+    model:
+      type: minecraft:model
+      path: sudime:item/pyrite_raw
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/pyrite_raw
+  sudime:pyrite_ingot:
+    material: iron_ingot
+    data:
+      item_name: "<!i><gradient:#ffd166:#b8860b>Lingot de Pyrite</gradient>"
+      lore:
+        - "<!i><gray>Métal doré extrait des profondeurs lunaires."
+    model:
+      type: minecraft:model
+      path: sudime:item/pyrite_ingot
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/pyrite_ingot
+  sudime:moon_helmet:
+    material: netherite_helmet
+    settings:
+      equipment:
+        asset_id: sudime:moon
+    data:
+      item_name: "<!i><gradient:#dfe9ff:#7f9bd6>Casque Lunaire</gradient>"
+      max_damage: 1800
+      enchantment:
+        "minecraft:protection": 4
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 5
+          operation: add_value
+          id: sudime:moon_helmet_armor
+          slot: head
+        - type: minecraft:generic.armor_toughness
+          amount: 3
+          operation: add_value
+          id: sudime:moon_helmet_toughness
+          slot: head
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#dfe9ff:#7f9bd6><bold>CASQUE LUNAIRE</bold></gradient>"
+        - "<!i><gray>Indispensable pour survivre sur la Lune."
+        - "<!i><gray>Ouvre les portails lunaires quand la panoplie est complète."
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/moon_helmet
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/moon_helmet
+  sudime:moon_chestplate:
+    material: netherite_chestplate
+    settings:
+      equipment:
+        asset_id: sudime:moon
+    data:
+      item_name: "<!i><gradient:#dfe9ff:#7f9bd6>Plastron Lunaire</gradient>"
+      max_damage: 1800
+      enchantment:
+        "minecraft:protection": 4
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 8
+          operation: add_value
+          id: sudime:moon_chestplate_armor
+          slot: chest
+        - type: minecraft:generic.armor_toughness
+          amount: 3
+          operation: add_value
+          id: sudime:moon_chestplate_toughness
+          slot: chest
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#dfe9ff:#7f9bd6><bold>PLASTRON LUNAIRE</bold></gradient>"
+        - "<!i><gray>Indispensable pour survivre sur la Lune."
+        - "<!i><gray>Ouvre les portails lunaires quand la panoplie est complète."
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/moon_chestplate
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/moon_chestplate
+  sudime:moon_leggings:
+    material: netherite_leggings
+    settings:
+      equipment:
+        asset_id: sudime:moon
+    data:
+      item_name: "<!i><gradient:#dfe9ff:#7f9bd6>Jambières Lunaires</gradient>"
+      max_damage: 1800
+      enchantment:
+        "minecraft:protection": 4
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 6
+          operation: add_value
+          id: sudime:moon_leggings_armor
+          slot: legs
+        - type: minecraft:generic.armor_toughness
+          amount: 3
+          operation: add_value
+          id: sudime:moon_leggings_toughness
+          slot: legs
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#dfe9ff:#7f9bd6><bold>JAMBIÈRES LUNAIRES</bold></gradient>"
+        - "<!i><gray>Indispensable pour survivre sur la Lune."
+        - "<!i><gray>Ouvre les portails lunaires quand la panoplie est complète."
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/moon_leggings
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/moon_leggings
+  sudime:moon_boots:
+    material: netherite_boots
+    settings:
+      equipment:
+        asset_id: sudime:moon
+    data:
+      item_name: "<!i><gradient:#dfe9ff:#7f9bd6>Bottes Lunaires</gradient>"
+      max_damage: 1800
+      enchantment:
+        "minecraft:protection": 4
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 5
+          operation: add_value
+          id: sudime:moon_boots_armor
+          slot: feet
+        - type: minecraft:generic.armor_toughness
+          amount: 3
+          operation: add_value
+          id: sudime:moon_boots_toughness
+          slot: feet
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#dfe9ff:#7f9bd6><bold>BOTTES LUNAIRES</bold></gradient>"
+        - "<!i><gray>Indispensable pour survivre sur la Lune."
+        - "<!i><gray>Ouvre les portails lunaires quand la panoplie est complète."
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/moon_boots
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/moon_boots
+
+  sudime:moon_portal_frame:
+    data:
+      item_name: "<!i><gradient:#78e6ff:#2c8fb5>Cadre de portail lunaire</gradient>"
+      lore:
+        - "<!i><gray>Monte un cadre avec 8 blocs, puis"
+        - "<!i><gray>clic droit en <white>Armure Lunaire</white> complète."
+        - "<!i><gray>Le portail s'ouvre et mène sur la Lune."
+    model: minecraft:block/custom/moon_portal_frame
+    behavior:
+      type: block_item
+      block:
+        loot:
+          template: default:loot_table/self
+        settings:
+          template:
+            - default:sound/stone
+          overrides:
+            hardness: 25.0
+            resistance: 1200.0
+            tags: ["minecraft:mineable/pickaxe"]
+        state:
+          auto_state: solid
+          model:
+            path: minecraft:block/custom/moon_portal_frame
+            generation:
+              parent: minecraft:block/cube_all
+              textures:
+                all: minecraft:block/custom/moon_portal_frame
+
 blocks:
   sudime:sudime_ore:
     behavior:
@@ -595,14 +789,75 @@ blocks:
       auto_state: solid
       model:
         path: minecraft:block/farmland
+  # ── Blocs lunaires ───────────────────────────────────────────────────
+  sudime:moon_regolith:
+    settings:
+      hardness: 0.6
+      resistance: 0.6
+      tags:
+        - minecraft:mineable/shovel
+    loot:
+      template: default:loot_table/self
+    state:
+      auto_state: solid
+      texture: minecraft:block/custom/moon_regolith
+  sudime:moon_rock:
+    settings:
+      hardness: 1.5
+      resistance: 6.0
+      tags:
+        - minecraft:mineable/pickaxe
+    loot:
+      template: default:loot_table/self
+    state:
+      auto_state: solid
+      texture: minecraft:block/custom/moon_rock
+  sudime:pyrite_ore:
+    behavior:
+      type: drop_experience_block
+      amount: 2~5
+      condition:
+        type: enchantment
+        predicate: minecraft:silk_touch<=0
+    loot:
+      template: default:loot_table/ore
+      arguments:
+        ore_drop: sudime:pyrite_raw
+        ore_block: sudime:pyrite_ore
+        ore_drop_count: 1
+    settings:
+      template: default:settings/ore
+      arguments:
+        break_power: 1
+    state:
+      auto_state: solid
+      texture: minecraft:block/custom/pyrite_ore
+  sudime:moon_portal:
+    settings:
+      hardness: 0.1
+      resistance: 1200.0
+    loot:
+      pools: []
+    state:
+      auto_state: solid
+      texture: minecraft:block/custom/moon_portal
+
 equipments:
   $$>=1.21.2:
     sudime:sudime:
       type: component
       humanoid: minecraft:entity/equipment/humanoid/sudime
       humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/sudime
+    sudime:moon:
+      type: component
+      humanoid: minecraft:entity/equipment/humanoid/moon
+      humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/moon
   $$<1.21.2:
     sudime:sudime:
       type: trim
       humanoid: minecraft:entity/equipment/humanoid/sudime
       humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/sudime
+    sudime:moon:
+      type: trim
+      humanoid: minecraft:entity/equipment/humanoid/moon
+      humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/moon

@@ -283,3 +283,94 @@ recipes:
     result:
       id: sudime:drawer_upgrade
       count: 1
+
+  # ── Lune ─────────────────────────────────────────────────────────────
+  sudime:pyrite_ingot_from_smelting_raw:
+    type: smelting
+    experience: 0.7
+    category: misc
+    group: sudime
+    time: 200
+    ingredient: sudime:pyrite_raw
+    result:
+      id: sudime:pyrite_ingot
+      count: 1
+  sudime:pyrite_ingot_from_blasting_raw:
+    type: blasting
+    experience: 0.7
+    category: misc
+    group: sudime
+    time: 100
+    ingredient: sudime:pyrite_raw
+    result:
+      id: sudime:pyrite_ingot
+      count: 1
+  sudime:moon_portal_frame:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - "SOS"
+      - "SSS"
+    ingredients:
+      S: minecraft:stone_bricks
+      O: minecraft:obsidian
+    result:
+      id: sudime:moon_portal_frame
+      count: 8
+  sudime:moon_helmet:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - "S S"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:moon_helmet
+      count: 1
+  sudime:moon_chestplate:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - "S S"
+      - "SSS"
+      - "SSS"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:moon_chestplate
+      count: 1
+  sudime:moon_leggings:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - "S S"
+      - "S S"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:moon_leggings
+      count: 1
+  sudime:moon_boots:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - "S S"
+      - "S S"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:moon_boots
+      count: 1
