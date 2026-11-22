@@ -26,10 +26,8 @@ categories:
       - sudime:turbo_farmland
       - sudime:sudime_drawer
       - sudime:drawer_upgrade
-      - '#sudime:pyrite'
   sudime:pyrite:
     priority: 6
-    hidden: true
     name: "<!i><gradient:#ffd166:#b8860b>Pyrite</gradient>"
     lore:
       - "<!i><gray>Pyrite brute et lingots, armure lunaire et portail"
