@@ -1,0 +1,608 @@
+# Armure, outils et minerai en Sudime — textures issues du pack LX (Sudime de LaxaCube).
+# Textures des items : resourcepack/assets/minecraft/textures/item/sudime/*.png
+# Textures des minerais : resourcepack/assets/minecraft/textures/block/custom/sudime_ore.png
+#                         resourcepack/assets/minecraft/textures/block/custom/deepslate_sudime_ore.png
+# Couches d'armure : textures/entity/equipment/humanoid/sudime.png (layer_1)
+#                    textures/entity/equipment/humanoid_leggings/sudime.png (layer_2)
+items:
+  # ── Armure ───────────────────────────────────────────────────────────
+  sudime:sudime_helmet:
+    material: netherite_helmet
+    settings:
+      equipment:
+        asset_id: sudime:sudime
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Casque en Sudime</gradient>"
+      max_damage: 2500
+      enchantment:
+        "minecraft:protection": 5
+        "minecraft:thorns": 3
+        "minecraft:respiration": 5
+        "minecraft:aqua_affinity": 1
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 6
+          operation: add_value
+          id: sudime:helmet_armor
+          slot: head
+        - type: minecraft:generic.armor_toughness
+          amount: 4
+          operation: add_value
+          id: sudime:helmet_toughness
+          slot: head
+        - type: minecraft:generic.knockback_resistance
+          amount: 0.2
+          operation: add_value
+          id: sudime:helmet_knockback
+          slot: head
+        - type: minecraft:generic.luck
+          amount: 2
+          operation: add_value
+          id: sudime:helmet_luck
+          slot: head
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#e0aaff:#7b2cbf><bold>CASQUE EN SUDIME</bold></gradient>"
+        - "<!i><gray>Forgé dans les profondeurs, pour les rois."
+        - "<!i> "
+        - "<!i><light_purple>✦ Statistiques"
+        - "<!i><gray>• Armure <white>+6"
+        - "<!i><gray>• Robustesse <white>+4"
+        - "<!i><gray>• Résistance au recul <white>+20 %"
+        - "<!i><gray>• Chance <white>+2"
+        - "<!i><gray>• Durabilité <white>2 500"
+        - "<!i> "
+        - "<!i><gold>✦ Enchantements"
+        - "<!i><gray>• Protection <white>V"
+        - "<!i><gray>• Épine <white>III"
+        - "<!i><gray>• Respiration <white>V"
+        - "<!i><gray>• Affinité aquatique"
+        - "<!i> "
+        - "<!i><dark_gray><italic>« Solide, mais pas éternel. »"
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_helmet
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/sudime_helmet
+  sudime:sudime_chestplate:
+    material: netherite_chestplate
+    settings:
+      equipment:
+        asset_id: sudime:sudime
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Plastron en Sudime</gradient>"
+      max_damage: 3500
+      enchantment:
+        "minecraft:protection": 5
+        "minecraft:thorns": 3
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 12
+          operation: add_value
+          id: sudime:chestplate_armor
+          slot: chest
+        - type: minecraft:generic.armor_toughness
+          amount: 6
+          operation: add_value
+          id: sudime:chestplate_toughness
+          slot: chest
+        - type: minecraft:generic.knockback_resistance
+          amount: 0.3
+          operation: add_value
+          id: sudime:chestplate_knockback
+          slot: chest
+        - type: minecraft:generic.attack_damage
+          amount: 4
+          operation: add_value
+          id: sudime:chestplate_attack
+          slot: chest
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#e0aaff:#7b2cbf><bold>PLASTRON EN SUDIME</bold></gradient>"
+        - "<!i><gray>Une carapace de cristal, plus dure que l'acier."
+        - "<!i> "
+        - "<!i><light_purple>✦ Statistiques"
+        - "<!i><gray>• Armure <white>+12"
+        - "<!i><gray>• Robustesse <white>+6"
+        - "<!i><gray>• Résistance au recul <white>+30 %"
+        - "<!i><gray>• Dégâts d'attaque <white>+4"
+        - "<!i><gray>• Durabilité <white>3 500"
+        - "<!i> "
+        - "<!i><gold>✦ Enchantements"
+        - "<!i><gray>• Protection <white>V"
+        - "<!i><gray>• Épine <white>III"
+        - "<!i> "
+        - "<!i><dark_gray><italic>« Le cœur du set. Le cœur du guerrier. »"
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_chestplate
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/sudime_chestplate
+  sudime:sudime_leggings:
+    material: netherite_leggings
+    settings:
+      equipment:
+        asset_id: sudime:sudime
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Jambieres en Sudime</gradient>"
+      max_damage: 3000
+      enchantment:
+        "minecraft:protection": 5
+        "minecraft:swift_sneak": 5
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 9
+          operation: add_value
+          id: sudime:leggings_armor
+          slot: legs
+        - type: minecraft:generic.armor_toughness
+          amount: 5
+          operation: add_value
+          id: sudime:leggings_toughness
+          slot: legs
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#e0aaff:#7b2cbf><bold>JAMBIERES EN SUDIME</bold></gradient>"
+        - "<!i><gray>Chaque pas résonne comme un défi."
+        - "<!i> "
+        - "<!i><light_purple>✦ Statistiques"
+        - "<!i><gray>• Armure <white>+9"
+        - "<!i><gray>• Robustesse <white>+5"
+        - "<!i><gray>• Durabilité <white>3 000"
+        - "<!i> "
+        - "<!i><gold>✦ Enchantements"
+        - "<!i><gray>• Protection <white>V"
+        - "<!i><gray>• Furtivité agile <white>V"
+        - "<!i> "
+        - "<!i><dark_gray><italic>« Rapide comme l'éclair, silencieux comme l'ombre. »"
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_leggings
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/sudime_leggings
+  sudime:sudime_boots:
+    material: netherite_boots
+    settings:
+      equipment:
+        asset_id: sudime:sudime
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Bottes en Sudime</gradient>"
+      max_damage: 2500
+      enchantment:
+        "minecraft:protection": 5
+        "minecraft:feather_falling": 10
+        "minecraft:depth_strider": 3
+        "minecraft:soul_speed": 3
+        "minecraft:frost_walker": 2
+      attribute_modifiers:
+        - type: minecraft:generic.armor
+          amount: 6
+          operation: add_value
+          id: sudime:boots_armor
+          slot: feet
+        - type: minecraft:generic.armor_toughness
+          amount: 4
+          operation: add_value
+          id: sudime:boots_toughness
+          slot: feet
+        - type: minecraft:generic.movement_speed
+          amount: 0.005
+          operation: add_value
+          id: sudime:boots_speed
+          slot: feet
+        - type: minecraft:generic.step_height
+          amount: 0.5
+          operation: add_value
+          id: sudime:boots_step
+          slot: feet
+        - type: minecraft:generic.safe_fall_distance
+          amount: 8
+          operation: add_value
+          id: sudime:boots_fall
+          slot: feet
+      lore:
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+        - "<!i><white>» <gradient:#e0aaff:#7b2cbf><bold>BOTTES EN SUDIME</bold></gradient>"
+        - "<!i><gray>La montagne n'est qu'un escalier."
+        - "<!i> "
+        - "<!i><light_purple>✦ Statistiques"
+        - "<!i><gray>• Armure <white>+6"
+        - "<!i><gray>• Robustesse <white>+4"
+        - "<!i><gray>• Vitesse <white>+5 %"
+        - "<!i><gray>• Durabilité <white>2 500"
+        - "<!i><gray>• Hauteur de marche <white>+0,5"
+        - "<!i><gray>• Chute sûre <white>+8 blocs"
+        - "<!i> "
+        - "<!i><gold>✦ Enchantements"
+        - "<!i><gray>• Protection <white>V"
+        - "<!i><gray>• Plume <white>X"
+        - "<!i><gray>• Marche rapide <white>III"
+        - "<!i><gray>• Vitesse des âmes <white>III"
+        - "<!i><gray>• Marche sur la glace <white>II"
+        - "<!i> "
+        - "<!i><dark_gray><italic>« Cours sur l'eau, vole au-dessus du vide. »"
+        - "<!i><dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_boots
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/sudime_boots
+
+  # ── Minerais ─────────────────────────────────────────────────────────
+  sudime:sudime_ore:
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Minerai de Sudime</gradient>"
+      lore:
+        - "<!i><gray>Roche imprégnée de cristaux de Sudime."
+        - "<!i><gray>Fondre ou piocher pour obtenir le lingot."
+    model: minecraft:block/custom/sudime_ore
+    behavior:
+      type: block_item
+      block: sudime:sudime_ore
+  sudime:deepslate_sudime_ore:
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Minerai de Sudime en Schiste</gradient>"
+      lore:
+        - "<!i><gray>Cristaux de Sudime prisonniers du schiste."
+        - "<!i><gray>Fondre ou piocher pour obtenir le lingot."
+    model: minecraft:block/custom/deepslate_sudime_ore
+    behavior:
+      type: block_item
+      block: sudime:deepslate_sudime_ore
+
+  # ── Agriculture ──────────────────────────────────────────────────────
+  sudime:turbo_farmland:
+    material: farmland
+    data:
+      item_name: "<!i><gradient:#a8e063:#2e7d32>Terre Turbo</gradient>"
+      lore:
+        - "<!i><gray>Terre déjà labourée et toujours humide."
+        - "<!i><gray>Les cultures plantées dessus poussent <green>32× plus vite</green>."
+        - "<!i><dark_gray>Fabriquée avec de la terre et de la poudre d'os."
+    behavior:
+      type: block_item
+      block: sudime:turbo_farmland
+    model:
+      type: minecraft:model
+      path: sudime:item/turbo_farmland
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:block/farmland
+
+  # ── Outils ───────────────────────────────────────────────────────────
+  sudime:sudime_sword:
+    material: netherite_sword
+    data:
+      max_damage: 7000
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Epee en Sudime</gradient>"
+      enchantment:
+        "minecraft:sharpness": 5
+        "minecraft:looting": 3
+        "minecraft:fire_aspect": 2
+        "minecraft:sweeping_edge": 3
+      attribute_modifiers:
+        - type: minecraft:generic.attack_damage
+          amount: 5
+          operation: add_value
+          id: sudime:sword_attack
+          slot: mainhand
+      lore:
+        - "<!i><gray>Lame en Sudime"
+        - "<!i> "
+        - "<!i><light_purple>✦ Statistiques"
+        - "<!i><gray>• Dégâts d'attaque <white>+5"
+        - "<!i> "
+        - "<!i><gold>✦ Enchantements"
+        - "<!i><gray>• Tranchant <white>V"
+        - "<!i><gray>• Butin <white>III"
+        - "<!i><gray>• Aspect enflammé <white>II"
+        - "<!i><gray>• Balayage <white>III"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_sword
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_sword
+  sudime:sudime_pickaxe:
+    material: netherite_pickaxe
+    data:
+      max_damage: 7000
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Pioche en Sudime</gradient>"
+      enchantment:
+        "minecraft:efficiency": 12
+      lore:
+        - "<!i><gray>Pioche en Sudime"
+        - "<!i><gray>Efficacité XII : minage ultra-rapide"
+        - "<!i><dark_gray>Casse les blocs normalement, sans casse instantanée"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_pickaxe
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_pickaxe
+  sudime:sudime_axe:
+    material: netherite_axe
+    data:
+      max_damage: 7000
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Hache en Sudime</gradient>"
+      enchantment:
+        "minecraft:efficiency": 12
+      lore:
+        - "<!i><gray>Abat l'arbre entier d'un seul coup"
+        - "<!i><dark_gray>Shift pour couper normalement"
+        - "<!i><gray>Efficacité XII : coupe ultra-rapide"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_axe
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_axe
+  sudime:sudime_shovel:
+    material: netherite_shovel
+    data:
+      max_damage: 7000
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Pelle en Sudime</gradient>"
+      enchantment:
+        "minecraft:efficiency": 12
+      lore:
+        - "<!i><gray>Casse terre, sable, gravier... en un coup"
+        - "<!i><gray>Efficacité XII : pelletage ultra-rapide"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_shovel
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_shovel
+  sudime:sudime_hoe:
+    material: netherite_hoe
+    data:
+      max_damage: 7000
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Houe en Sudime</gradient>"
+      enchantment:
+        "minecraft:efficiency": 12
+      lore:
+        - "<!i><gray>Clic droit sur une culture mûre"
+        - "<!i><gray>récolte et replante en 3×3"
+        - "<!i><gray>Efficacité XII : récolte ultra-rapide"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_hoe
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_hoe
+  sudime:sudime_hammer:
+    material: netherite_pickaxe
+    settings:
+      break_power: 1
+    data:
+      max_damage: 7000
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Marteau en Sudime</gradient>"
+      lore:
+        - "<!i><gray>Mine en 3×3 d'un seul coup"
+        - "<!i><gray>Minage ralenti de <white>80 %</white>"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_hammer
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_hammer
+
+  # ── Objets ───────────────────────────────────────────────────────────
+  sudime:sudime_ingot:
+    material: netherite_ingot
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Sudime</gradient>"
+      lore:
+        - "<!i><gray>Lingot légendaire, extrait des profondeurs."
+        - "<!i><gray>Base de l'armure et des outils en Sudime."
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_ingot
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/sudime_ingot
+  sudime:sudime_magnet:
+    material: iron_sword
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Magnette</gradient>"
+      lore:
+        - "<!i><gray>Shift + clic droit : active/désactive"
+        - "<!i><gray>Fonctionne en main principale ou en main gauche"
+        - "<!i><gray>Attire les items dans un rayon de 20 blocs"
+        - "<!i><dark_gray>Consomme de la durabilité"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_magnet
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_magnet
+  sudime:sudime_chest_detector:
+    material: iron_sword
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Detecteur de Coffres</gradient>"
+      lore:
+        - "<!i><gray>Clic droit : compte les coffres du chunk"
+        - "<!i><dark_gray>Consomme 1 durabilité"
+    model:
+      type: minecraft:model
+      path: sudime:item/sudime_chest_detector
+      generation:
+        parent: minecraft:item/handheld
+        textures:
+          layer0: minecraft:item/sudime/sudime_chest_detector
+
+  # ── Stockage ────────────────────────────────────────────────────────
+  sudime:sudime_drawer:
+    data:
+      item_name: "<!i><gradient:#e0aaff:#7b2cbf>Drawer en Sudime</gradient>"
+      lore:
+        - "<!i><gray>Stocke massivement jusqu'à <white>4 types d'items</white>."
+        - "<!i><gray>1 compartiment au départ, 4 maximum."
+        - "<!i><gray>1 280 items par compartiment."
+        - "<!i> "
+        - "<!i><light_purple>✦ Utilisation"
+        - "<!i><gray>• Clic droit : déposer l'item en main"
+        - "<!i><gray>• Clic gauche : retirer une pile"
+        - "<!i><gray>• Maj + clic gauche : tout retirer"
+        - "<!i><gray>• Clique sur un des 4 quartiers pour choisir"
+        - "<!i><gray>• Clic droit avec un <white>Upgrade de Drawer</white>"
+        - "<!i><gray>  pour débloquer un compartiment"
+    model: minecraft:block/custom/drawer_block
+    behavior:
+      type: block_item
+      block:
+        loot:
+          template: default:loot_table/self
+        settings:
+          template:
+            - default:sound/wood
+            - default:hardness/wood
+          overrides:
+            instrument: bass
+            tags: ["minecraft:mineable/axe"]
+        states:
+          properties:
+            facing:
+              type: 4-direction
+              default: north
+          appearances:
+            east:
+              auto_state: note_block
+              model:
+                path: minecraft:block/custom/drawer_block
+                y: 90
+                generation:
+                  parent: minecraft:block/cube
+                  textures:
+                    down: minecraft:block/custom/drawer_block_bottom
+                    up: minecraft:block/custom/drawer_block_top
+                    north: minecraft:block/custom/drawer_block_front
+                    east: minecraft:block/custom/drawer_block_side_left
+                    south: minecraft:block/custom/drawer_block_back
+                    west: minecraft:block/custom/drawer_block_side_right
+                    particle: minecraft:block/custom/drawer_block_front
+            north:
+              auto_state: note_block
+              model:
+                path: minecraft:block/custom/drawer_block
+            south:
+              auto_state: note_block
+              model:
+                path: minecraft:block/custom/drawer_block
+                y: 180
+            west:
+              auto_state: note_block
+              model:
+                path: minecraft:block/custom/drawer_block
+                y: 270
+          variants:
+            facing=east:
+              appearance: east
+            facing=north:
+              appearance: north
+            facing=south:
+              appearance: south
+            facing=west:
+              appearance: west
+  sudime:drawer_upgrade:
+    material: netherite_ingot
+    data:
+      item_name: "<!i><gradient:#a8e063:#2e7d32>Upgrade de Drawer</gradient>"
+      lore:
+        - "<!i><gray>Ajoute <white>+1 compartiment</white> à un Drawer en Sudime."
+        - "<!i><gray>Maximum : <white>4 compartiments</white>."
+        - "<!i> "
+        - "<!i><light_purple>✦ Utilisation"
+        - "<!i><gray>• Clic droit sur un Drawer en Sudime"
+    model:
+      type: minecraft:model
+      path: sudime:item/drawer_upgrade
+      generation:
+        parent: minecraft:item/generated
+        textures:
+          layer0: minecraft:item/sudime/sudime_ingot
+blocks:
+  sudime:sudime_ore:
+    behavior:
+      type: drop_experience_block
+      amount: 3~7
+      condition:
+        type: enchantment
+        predicate: minecraft:silk_touch<=0
+    loot:
+      template: default:loot_table/ore
+      arguments:
+        ore_drop: sudime:sudime_ingot
+        ore_block: sudime:sudime_ore
+        ore_drop_count: 2
+    settings:
+      template: default:settings/ore
+      arguments:
+        break_power: 3
+    state:
+      auto_state: solid
+      texture: minecraft:block/custom/sudime_ore
+  sudime:deepslate_sudime_ore:
+    behavior:
+      type: drop_experience_block
+      amount: 3~7
+      condition:
+        type: enchantment
+        predicate: minecraft:silk_touch<=0
+    loot:
+      template: default:loot_table/ore
+      arguments:
+        ore_drop: sudime:sudime_ingot
+        ore_block: sudime:deepslate_sudime_ore
+        ore_drop_count: 2
+    settings:
+      template: default:settings/deepslate_ore
+      arguments:
+        break_power: 3
+    state:
+      auto_state: solid
+      texture: minecraft:block/custom/deepslate_sudime_ore
+  sudime:turbo_farmland:
+    settings:
+      hardness: 0.6
+      resistance: 0.6
+      item: sudime:turbo_farmland
+      tags:
+        - minecraft:mineable/shovel
+    loot:
+      pools: []
+    state:
+      auto_state: solid
+      model:
+        path: minecraft:block/farmland
+equipments:
+  $$>=1.21.2:
+    sudime:sudime:
+      type: component
+      humanoid: minecraft:entity/equipment/humanoid/sudime
+      humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/sudime
+  $$<1.21.2:
+    sudime:sudime:
+      type: trim
+      humanoid: minecraft:entity/equipment/humanoid/sudime
+      humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/sudime

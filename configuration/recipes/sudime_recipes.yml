@@ -1,0 +1,285 @@
+# Recettes de craft des items en Sudime.
+# Le Sudime ne se fabrique plus : il se mine (voir configuration/features.yml)
+# puis se fond ou se grille à partir du minerai.
+# https://xiao-momi.github.io/craft-engine-wiki/configuration/recipe
+# S = lingot de Sudime (sudime:sudime_ingot), T = bâton
+recipes:
+  # ── Minerai → Lingot ─────────────────────────────────────────────────
+  sudime:sudime_ingot_from_smelting_ore:
+    type: smelting
+    experience: 1.0
+    category: misc
+    group: sudime
+    time: 200
+    ingredient: sudime:sudime_ore
+    result:
+      id: sudime:sudime_ingot
+      count: 2
+  sudime:sudime_ingot_from_smelting_deepslate_ore:
+    type: smelting
+    experience: 1.0
+    category: misc
+    group: sudime
+    time: 200
+    ingredient: sudime:deepslate_sudime_ore
+    result:
+      id: sudime:sudime_ingot
+      count: 2
+  sudime:sudime_ingot_from_blasting_ore:
+    type: blasting
+    experience: 1.0
+    category: misc
+    group: sudime
+    time: 100
+    ingredient: sudime:sudime_ore
+    result:
+      id: sudime:sudime_ingot
+      count: 2
+  sudime:sudime_ingot_from_blasting_deepslate_ore:
+    type: blasting
+    experience: 1.0
+    category: misc
+    group: sudime
+    time: 100
+    ingredient: sudime:deepslate_sudime_ore
+    result:
+      id: sudime:sudime_ingot
+      count: 2
+
+  # ── Armure ───────────────────────────────────────────────────────────
+  sudime:sudime_helmet:
+    type: shaped
+    category: equipment
+    group: sudime_armor
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - "S S"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:sudime_helmet
+      count: 1
+
+  sudime:sudime_chestplate:
+    type: shaped
+    category: equipment
+    group: sudime_armor
+    unlock_on_join: true
+    pattern:
+      - "S S"
+      - "SSS"
+      - "SSS"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:sudime_chestplate
+      count: 1
+
+  sudime:sudime_leggings:
+    type: shaped
+    category: equipment
+    group: sudime_armor
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - "S S"
+      - "S S"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:sudime_leggings
+      count: 1
+
+  sudime:sudime_boots:
+    type: shaped
+    category: equipment
+    group: sudime_armor
+    unlock_on_join: true
+    pattern:
+      - "S S"
+      - "S S"
+    ingredients:
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:sudime_boots
+      count: 1
+
+  # ── Outils ───────────────────────────────────────────────────────────
+  sudime:sudime_sword:
+    type: shaped
+    category: equipment
+    group: sudime_tools
+    unlock_on_join: true
+    pattern:
+      - "S"
+      - "S"
+      - "T"
+    ingredients:
+      S: sudime:sudime_ingot
+      T: minecraft:stick
+    result:
+      id: sudime:sudime_sword
+      count: 1
+
+  sudime:sudime_pickaxe:
+    type: shaped
+    category: equipment
+    group: sudime_tools
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - " T "
+      - " T "
+    ingredients:
+      S: sudime:sudime_ingot
+      T: minecraft:stick
+    result:
+      id: sudime:sudime_pickaxe
+      count: 1
+
+  sudime:sudime_axe:
+    type: shaped
+    category: equipment
+    group: sudime_tools
+    unlock_on_join: true
+    pattern:
+      - "SS"
+      - "ST"
+      - " T"
+    ingredients:
+      S: sudime:sudime_ingot
+      T: minecraft:stick
+    result:
+      id: sudime:sudime_axe
+      count: 1
+
+  sudime:sudime_shovel:
+    type: shaped
+    category: equipment
+    group: sudime_tools
+    unlock_on_join: true
+    pattern:
+      - "S"
+      - "T"
+      - "T"
+    ingredients:
+      S: sudime:sudime_ingot
+      T: minecraft:stick
+    result:
+      id: sudime:sudime_shovel
+      count: 1
+
+  sudime:sudime_hoe:
+    type: shaped
+    category: equipment
+    group: sudime_tools
+    unlock_on_join: true
+    pattern:
+      - "SS"
+      - " T"
+      - " T"
+    ingredients:
+      S: sudime:sudime_ingot
+      T: minecraft:stick
+    result:
+      id: sudime:sudime_hoe
+      count: 1
+
+  sudime:sudime_hammer:
+    type: shaped
+    category: equipment
+    group: sudime_tools
+    unlock_on_join: true
+    pattern:
+      - "SSS"
+      - "STS"
+      - " T "
+    ingredients:
+      S: sudime:sudime_ingot
+      T: minecraft:stick
+    result:
+      id: sudime:sudime_hammer
+      count: 1
+
+  # ── Objets ───────────────────────────────────────────────────────────
+  sudime:sudime_magnet:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - " S "
+      - "SCS"
+      - " S "
+    ingredients:
+      S: sudime:sudime_ingot
+      C: minecraft:compass
+    result:
+      id: sudime:sudime_magnet
+      count: 1
+
+  sudime:sudime_chest_detector:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - " S "
+      - "SES"
+      - " S "
+    ingredients:
+      S: sudime:sudime_ingot
+      E: minecraft:ender_eye
+    result:
+      id: sudime:sudime_chest_detector
+      count: 1
+
+  # ── Agriculture ─────────────────────────────────────────────────────
+  sudime:turbo_farmland:
+    type: shapeless
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    ingredients:
+      - minecraft:dirt
+      - minecraft:dirt
+      - minecraft:dirt
+      - minecraft:dirt
+      - minecraft:dirt
+      - minecraft:bone_meal
+      - minecraft:bone_meal
+      - minecraft:bone_meal
+      - minecraft:bone_meal
+    result:
+      id: sudime:turbo_farmland
+      count: 4
+
+  # ── Stockage ────────────────────────────────────────────────────────
+  sudime:sudime_drawer:
+    type: shaped
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    pattern:
+      - "PPP"
+      - "PSP"
+      - "PPP"
+    ingredients:
+      P: '#minecraft:planks'
+      S: sudime:sudime_ingot
+    result:
+      id: sudime:sudime_drawer
+      count: 1
+
+  sudime:drawer_upgrade:
+    type: shapeless
+    category: misc
+    group: sudime
+    unlock_on_join: true
+    ingredients:
+      - sudime:sudime_ingot
+      - minecraft:chest
+    result:
+      id: sudime:drawer_upgrade
+      count: 1

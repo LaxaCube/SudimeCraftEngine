@@ -1,0 +1,28 @@
+# Catégorie « Sudime » du navigateur d'items (/ce)
+# https://xiao-momi.github.io/craft-engine-wiki/configuration/category
+categories:
+  sudime:sudime:
+    priority: 5
+    name: "<!i><gradient:#e0aaff:#7b2cbf>Sudime</gradient>"
+    lore:
+      - "<!i><gray>Minerais, armure, outils, lingot et agriculture en Sudime"
+    icon: sudime:sudime_ore
+    list:
+      - sudime:sudime_ore
+      - sudime:deepslate_sudime_ore
+      - sudime:sudime_helmet
+      - sudime:sudime_chestplate
+      - sudime:sudime_leggings
+      - sudime:sudime_boots
+      - sudime:sudime_sword
+      - sudime:sudime_pickaxe
+      - sudime:sudime_axe
+      - sudime:sudime_shovel
+      - sudime:sudime_hoe
+      - sudime:sudime_hammer
+      - sudime:sudime_ingot
+      - sudime:sudime_magnet
+      - sudime:sudime_chest_detector
+      - sudime:turbo_farmland
+      - sudime:sudime_drawer
+      - sudime:drawer_upgrade
