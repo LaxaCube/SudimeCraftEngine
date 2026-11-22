@@ -262,12 +262,12 @@ recipes:
     group: sudime
     unlock_on_join: true
     pattern:
-      - "PPP"
-      - "PSP"
-      - "PPP"
+      - "SSS"
+      - "SDS"
+      - "SSS"
     ingredients:
-      P: '#minecraft:planks'
       S: sudime:sudime_ingot
+      D: minecraft:chest
     result:
       id: sudime:sudime_drawer
       count: 1
